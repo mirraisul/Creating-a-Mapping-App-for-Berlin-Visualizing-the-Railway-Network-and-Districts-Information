@@ -7,10 +7,10 @@ import leafmap.foliumap as leafmap
 #set the name of the tab
 st.set_page_config(page_title='Berlin Map', layout='wide')
 
-st.title('Raods and Railways in Berlin')
+st.title('Railways and Districts in Berlin')
 
 #st.sidebar.title('About')
-st.sidebar.info('This app visualizes the roads and railway network in Berlin')
+st.sidebar.info('This app visualizes the districts and railway network in Berlin')
 
 #path= "E:/Study/ONLINE_COURSE/1_PythonDataviz/Day_25/Personal_dashboard/QGIS/"
 area_file= "Berlin_districts.shp" #area file of Berlin
@@ -105,4 +105,4 @@ if overlay:
     )
 
 
-m_streamlit = m.to_streamlit(1000, 700)
+m_streamlit = m.to_streamlit(900, 650)

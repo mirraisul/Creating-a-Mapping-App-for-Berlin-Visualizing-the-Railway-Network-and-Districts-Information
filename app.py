@@ -67,7 +67,9 @@ st.sidebar.pyplot(fig)
 
 ## Create the map
 #first create a select box to create a basemap
-basemap= st.selectbox('Select a Basemap', ['CartoDB.DarkMatter', 'OpenStreetMap', 'CartoDB.Positron',])
+#basemap= st.selectbox('Select a Basemap', ['CartoDB.DarkMatter', 'OpenStreetMap', 'CartoDB.Positron',])
+
+basemap= st.selectbox('Select a Basemap', ['Stadia.StamenTonerDark', 'Stadia.StamenTonerLite', 'OpenStreetMap', ])
 m = leafmap.Map(
     layers_control=True,
     draw_control=False,
